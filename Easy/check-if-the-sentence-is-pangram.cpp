@@ -13,3 +13,15 @@ public:
             return false;
     }
 };
+
+class Solution {
+public:
+    bool checkIfPangram(string sentence) {
+        int seen = 0;
+        for(char c : sentence){
+            int i = c-'a';
+            seen = seen | (1<<i);
+        }
+        return seen==((1<<26)-1);
+    }
+};
