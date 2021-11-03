@@ -8,6 +8,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// tc : O(n)
+// sc : O(1)
+
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
