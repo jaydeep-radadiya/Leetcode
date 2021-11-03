@@ -1,3 +1,6 @@
+// tc : O(n) visit every node once
+// sc : O(n) for queue ds
+
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
