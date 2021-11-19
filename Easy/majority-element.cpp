@@ -76,3 +76,22 @@ public:
             return -1;
     }
 };
+
+// striver solution added
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        int cnt = 0;
+        int candidate = 0;
+        
+        for(int num : nums){
+            if(cnt==0){
+                candidate = num;
+            }
+            if(num==candidate) cnt++;
+            else cnt--;
+        }
+        return candidate;
+    }
+};
