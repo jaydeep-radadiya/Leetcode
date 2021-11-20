@@ -41,6 +41,7 @@ public:
         while(left<=right){
             int mid = left+(right-left)/2;
             
+            // if mid is left side of that val then this condition should be satisfy
             if(nums[mid]==nums[mid^1])
                 left = mid+1; // left part is valid
             else
