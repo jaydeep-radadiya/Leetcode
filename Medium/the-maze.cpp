@@ -28,6 +28,7 @@ public:
 					new_y += dy[i];
 				}
 
+				// either you crossed boundry or stopped at 1
 				new_x -= dx[i];
 				new_y -= dy[i];
 				if(vis[new_x][new_y]==0){

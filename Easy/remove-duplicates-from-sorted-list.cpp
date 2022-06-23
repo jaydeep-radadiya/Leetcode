@@ -41,3 +41,19 @@ public:
         return head;
     }
 };
+
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode *curr = head;
+        while(curr!=NULL){
+            ListNode *temp = curr->next;
+            while(temp!=NULL && curr->val==temp->val){
+                temp = temp->next;
+            }
+            curr->next = temp;
+            curr = curr->next;
+        }
+        return head;
+    }
+};

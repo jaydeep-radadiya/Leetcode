@@ -21,6 +21,24 @@ public:
 
 class Solution {
 public:
+    int addDigits(int n) {
+        while(true){
+            int sum = 0;
+            while(n>0){
+                sum += n%10;
+                n = n/10;
+            }
+            if(n==0 and sum/10==0)
+                return sum;
+            else if(n==0 and sum/10>=1)
+                n = sum;
+        }
+        return  -1;
+    }
+};
+
+class Solution {
+public:
     int addDigits(int num) {
         if(num==0) return 0;
         if(num%9==0) return 9;

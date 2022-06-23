@@ -26,3 +26,16 @@ public:
         return -1;
     }
 };
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        unordered_set<int> ss;
+        int sum = 0;
+        for(int i=0;i<nums.size();i++){
+            sum += nums[i];
+            ss.insert(nums[i]);
+        }
+        return 2*accumulate(ss.begin(),ss.end(),0)-sum;
+    }
+};

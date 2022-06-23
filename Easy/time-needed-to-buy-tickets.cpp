@@ -1,4 +1,5 @@
-// Brute Force Solution
+// brute force solution
+// tc : O(sum(arr))
 class Solution {
 public:
     int timeRequiredToBuy(vector<int>& tickets, int k) {
@@ -26,7 +27,7 @@ public:
     }
 };
 
-// One Pass Solution
+// one pass solution
 class Solution {
 public:
     int timeRequiredToBuy(vector<int>& tickets, int k) {
